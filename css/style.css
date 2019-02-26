@@ -37,8 +37,8 @@ body {
   padding: 12px 0;
   /* background: -webkit-gradient(linear, left top, right top, from(rgba(4,144,214,1)),to(rgba(3,116,172,1)));
   background: linear-gradient(to right, rgba(4,144,214,1) 0%,rgba(3,116,172,1) 100%);  */
-  background: #00B4DB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: #00B4DB;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#0083B0), to(#00B4DB));
   background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -91,6 +91,7 @@ body {
 
 .nav > label {
   font-family: 'Montserrat', sans-serif;
+  font-display: auto;
   font-size: 14px;
   font-weight: 600;
   padding: 0 26px;
@@ -189,6 +190,7 @@ body {
   margin: 0 0 6px 0;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
+  font-display: auto;
   color: #0083B0;
 }
 
@@ -201,6 +203,7 @@ body {
   border-bottom: 1px solid #f4f4f4;
   color: #757f83;
   font-family: 'Montserrat', sans-serif;
+  font-display: auto;
 }
 
 .social-media-link {
