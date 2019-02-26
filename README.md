@@ -11,13 +11,13 @@
 - Redux 
 - Webpack 
 
-### Backend:
+### Backend:
 - Nodejs 
 - GraphQL
 - Express 
 - Docker 
 
-### Data Base:
+### Data Base:
 - MongoDB
 - Firebase
 
