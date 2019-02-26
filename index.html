@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- favicon -->
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="/assets/manifest.json">
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#ddd">
     <script async  src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v2.0.1/pwacompat.min.js"></script>
+    <!-- Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/assets/bird_ef.png">
     <!-- Css Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.mini.css"/>
+    
     <title>Efren Sanchez</title>
+
   </head>
   <body>
 
@@ -50,9 +54,20 @@
       <!-- Slider -->
       <div class="slider">
         <div class="slider-track">
-          <a target="_blank" href="https://docs.google.com/document/d/1u_0OQrIcHZLfWAD9Cu_cREmOH16HxDlU-WIf530t738/edit?usp=sharing" class="slider-item about">DOWNLOAD MY CV</a>
-          <a href="mailto:efren.sanchezgon@gmail.com?Subject=Hello%20Efren" target="_top" class="slider-item works">LET'S WORK TOGETHER</a>
-          <a target="_blank" href="https://www.linkedin.com/in/EfrenSango" class="slider-item services">CONTACT ME</a>
+          <a 
+            target="_blank" 
+            href="https://docs.google.com/document/d/1u_0OQrIcHZLfWAD9Cu_cREmOH16HxDlU-WIf530t738/edit?usp=sharing" class="slider-item about"
+          >DOWNLOAD MY CV</a>
+          <a 
+            href="mailto:efren.sanchezgon@gmail.com?Subject=Hello%20Efren" 
+            target="_top" 
+            class="slider-item works"
+          >LET'S WORK TOGETHER</a>
+          <a 
+            target="_blank" 
+            href="https://www.linkedin.com/in/EfrenSango" 
+            class="slider-item services"
+          >CONTACT ME</a>
           <div class="slider-item contact">
             <!-- Linkedin -->
             <a target="_blank" href="https://www.linkedin.com/in/EfrenSango" class="social-media-link">
@@ -83,7 +98,11 @@
         <!-- About me -->
         <section class="section about">
           <div class="about-left">
-            <img src="./assets/a50afcee-112e-4f12-9f24-4bfcd78db726.jpg"/>
+            <img 
+            src="assets/efren.jpg" 
+            srcset="assets/efren.jpg, assets/efren@2x.jpg 2x"
+            alt="Photo of me" 
+            />
           </div>
           <div class="about-right">
             <div class="bio">
@@ -152,7 +171,7 @@
         <section class="section works">
           <a class="work" href="#">
             <div class="work-img">
-              <img async src="https://source.unsplash.com/300x900" />
+              <img async src="https://source.unsplash.com/300x900" alt="proyect capture"/>
             </div>
             <div class="work-content">
               <h4 class="work-title">Coding</h4>
@@ -166,7 +185,7 @@
 
           <a class="work" href="#">
             <div class="work-img">
-              <img async src="https://source.unsplash.com/302x902" />
+              <img async src="https://source.unsplash.com/302x902" alt="proyect capture"/>
             </div>
             <div class="work-content">
               <h4 class="work-title">Coding</h4>
@@ -180,7 +199,7 @@
 
           <a class="work" href="#">
             <div class="work-img">
-              <img async src="https://source.unsplash.com/304x904" />
+              <img async src="https://source.unsplash.com/304x904" alt="proyect capture"/>
             </div>
             <div class="work-content">
               <h4 class="work-title">Coding</h4>
@@ -194,7 +213,7 @@
 
           <a class="work" href="#">
             <div class="work-img">
-              <img async src="https://source.unsplash.com/306x906" />
+              <img async src="https://source.unsplash.com/306x906" alt="proyect capture"/>
             </div>
             <div class="work-content">
               <h4 class="work-title">Coding</h4>
@@ -275,7 +294,11 @@
         <section class="section contact">
           <div class="contact-content">
             <span class="avatar" >
-              <img src="./assets/bird_ef.png"/>
+              <img 
+                src="/assets/bird_ef.png" 
+                srcset="/assets/bird_ef.png, /assets/bird_ef@2x.png 2x"
+                alt="logo bird"
+                />
             </span>
             <h4 class="bio-subtitle">WEB DEVELOPER</h4>
             <a 
@@ -286,6 +309,7 @@
           </div>
           <div class="map-responsive">
             <iframe 
+              async
               src="https://maps.google.com/maps?width=600&amp;height=450&amp;hl=en&amp;q=Palmones%2C%20Spain+(Palmones)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"
               width="600"
               height="450"

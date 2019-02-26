@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:300,400,500,600');
 
-@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,600');
-
-
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 input[name="radio"] { display: none; }
@@ -439,8 +436,9 @@ body {
   .logo > svg { height: 20px; }
   .nav { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
   .slider { display: none; }
+  .section { padding: 0px; } 
   .work { width: 70%; }
-  .about { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .about { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
   .map-responsive { display: none; }
   .contact-content { width: 100%; }
  
