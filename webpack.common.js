@@ -3,12 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
-const DIST = path.resolve(__dirname, 'dist');
+const DIST = path.resolve(__dirname, 'docs');
 
 module.exports = {
   entry: './src/index.js',
   plugins: [
-    new CleanWebpackPlugin(['dist/*']),
+    new CleanWebpackPlugin(['docs/*']),
     new CopyPlugin([ 
       { 
         from: './src/assets', 
