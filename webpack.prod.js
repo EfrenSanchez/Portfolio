@@ -7,7 +7,8 @@ module.exports = merge(common, {
   devtool: 'source-map',
   plugins: [
     new MiniCssExtractPlugin({
-      filename:'[name].css'
+      filename:'[name].css',
+      chunkFilename: "[id].css"
     })
   ],
   module: {
@@ -15,7 +16,7 @@ module.exports = merge(common, {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          MiniCssExtractPlugin.loader, 'css-loader'
+          MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
         ],
       }
     ]

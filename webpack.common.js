@@ -6,7 +6,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const DIST = path.resolve(__dirname, 'docs');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   plugins: [
     new CleanWebpackPlugin(['docs/*']),
     new CopyPlugin([ 
@@ -17,6 +17,7 @@ module.exports = {
       } 
     ]),
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: './src/index.html',
       minify: {
           collapseWhitespace: true,
@@ -39,6 +40,18 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ],
+        exclude: path.resolve(__dirname, 'src/index.html')
       }
     ]
   }
