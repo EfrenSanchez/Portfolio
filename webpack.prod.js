@@ -21,18 +21,6 @@ module.exports = merge(common, {
           removeStyleLinkTypeAttributes: true,
           useShortDoctype: true
       }
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'shop-app.html',
-      template: './src/shop-app.html',
-      minify: {
-          collapseWhitespace: true,
-          removeComments: true,
-          removeRedundantAttributes: true,
-          removeScriptTypeAttributes: true,
-          removeStyleLinkTypeAttributes: true,
-          useShortDoctype: true
-      }
     })
   ],
   module: {
