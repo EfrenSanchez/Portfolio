@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
@@ -15,19 +14,7 @@ module.exports = {
         to: 'assets', 
         toType: 'dir' 
       } 
-    ]),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/index.html',
-      minify: {
-          collapseWhitespace: true,
-          removeComments: true,
-          removeRedundantAttributes: true,
-          removeScriptTypeAttributes: true,
-          removeStyleLinkTypeAttributes: true,
-          useShortDoctype: true
-      }
-    })
+    ])
   ],
   output: {
     filename: '[name].bundle.js',
@@ -38,20 +25,16 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader'
+          {
+            loader: 'file-loader'
+          }
         ]
       },
       {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]'
-            }
-          }
-        ],
-        exclude: path.resolve(__dirname, 'src/index.html')
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader'
+        }
       }
     ]
   }
