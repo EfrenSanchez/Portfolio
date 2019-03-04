@@ -1,0 +1,80 @@
+{
+  "pages": [
+    {
+      "id": "01",
+      "name": "About Me",
+      "title": "About me",
+      "icon": "<PersonIcon />"
+    },
+    {
+      "id": "02",
+      "name": "Work",
+      "title": "Efren's works",
+      "icon": "<WorkIcon />"
+    },
+    {
+      "id": "03",
+      "name": "Contact Me",
+      "title": "Contact to Efren Sanchez",
+      "icon": "<MailIcon />"
+    },
+    {
+      "id": "04",
+      "name": "Stack",
+      "title": "Efren's stack",
+      "icon": "<CodeIcon />"
+    }
+  ],
+  "socialMedia": [
+    {
+      "id": "01",
+      "name": "Github",
+      "src": "https://github.com/EfrenSanchez"
+    },
+    {
+      "id": "02",
+      "name": "Twitter",
+      "src": "https://twitter.com/EfrenSango"
+    },
+    {
+      "id": "03",
+      "name": "Linkedin",
+      "src": "https://www.linkedin.com/in/EfrenSango"
+    },
+    {
+      "id": "04",
+      "name": "Medium",
+      "src": "https://medium.com/@efrnsnchez"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "progress": "80%"
+    },
+    {
+      "name": "CSS",
+      "progress": "85%"
+    },
+    {
+      "name": "JAVASCRIPT",
+      "progress": "74%"
+    },
+    {
+      "name": "REACT",
+      "progress": "62%"
+    },
+    {
+      "name": "NodeJS",
+      "progress": "60%"
+    },
+    {
+      "name": "GRAPHQL",
+      "progress": "36%"
+    },
+    {
+      "name": "MONGODB",
+      "progress": "50%"
+    }
+  ]
+}
