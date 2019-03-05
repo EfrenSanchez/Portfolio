@@ -76,5 +76,39 @@
       "name": "MONGODB",
       "progress": "50%"
     }
+  ],
+  "works": [
+    {
+      "id": "01",
+      "img": "assets/shopping-app.png",
+      "title": "Shopping App",
+      "desc": "Dynamic web. HTML injecting into the DOM and the logic app just with vanilla JS, no frameworks",
+      "stack": "HTML | CSS | JS",
+      "src": ""
+    },
+    {
+      "id": "02",
+      "img": "https://source.unsplash.com/random",
+      "title": "Coding",
+      "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
+      "stack": "(Work in Progress)",
+      "src": ""
+    },
+    {
+      "id": "03",
+      "img": "https://source.unsplash.com/random",
+      "title": "Coding",
+      "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
+      "stack": "(Work in Progress)",
+      "src": ""
+    },
+    {
+      "id": "04",
+      "img": "https://source.unsplash.com/random",
+      "title": "Coding",
+      "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
+      "stack": "(Work in Progress)",
+      "src": ""
+    }
   ]
 }

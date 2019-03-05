@@ -98,10 +98,10 @@ const AboutMe = (props) => {
             <br/> 
             Born in Spain, Programmer by passion.  
             <br/>
-            I sympathize with the entire web production process, from server logic to HTML layout. 
+            I'm interested in the entire web production process, from server logic to HTML layout. 
             <br/>
             <br/>
-            I use Reactjs and Redux on the front-end and Nodejs and Express on the back-end,
+            I use React and Redux on the front-end and Nodejs and Express on the back-end,
             but never miss an opportunity to learn a new language or framework. 
             <br/>
             I also really like the design and UX, always trying to practice something.

@@ -6,6 +6,10 @@ import classNames from 'classnames';
 //Components 
 import Drawer from '../Drawer/Drawer';
 import AboutMe from '../Content/AboutMe/AboutMe';
+import ContactMe from '../Content/ContactMe/ContactMe';
+import Stack from '../Content/Stack/Stack';
+import Works from "../Content/Works/Works";
+import FullScreenDialog from '../Dialog/Dialog';
 
 //Material
 import { withStyles } from '@material-ui/core/styles';
@@ -58,7 +62,7 @@ const styles = theme => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing.unit * 3,
-    height: 'max-content'
+    height: 'auto'
   },
 });
 
@@ -68,21 +72,30 @@ class Nav extends React.Component {
   //State
   state = {
     open: false,
-    pageSelected: "About me"
+    pageSelected: "About me",
+    dialog: false,
+    projectSelected: '',
   };
 
+  
   //Handlers
   handleDrawerOpen = () => {
     this.setState({ open: true });
   };
-
+  
   handleDrawerClose = () => {
     this.setState({ open: false });
   };
-
+  
   handlePageSelector = (pageSelected) => {
     this.setState({ pageSelected });
   };
+  
+  handlesourceCode = (projectSelected) => {
+    this.setState({ projectSelected });
+    this.setState({ dialog: true });
+    console.log(projectSelected);
+  }
 
   //Render method
   render() {
@@ -90,50 +103,54 @@ class Nav extends React.Component {
 
     return (
       <div className={classes.root}>
-        <CssBaseline />
-          {/* AppBar */}
-        <AppBar
-          position="fixed"
-          className={classNames(classes.appBar, {
-            [classes.appBarShift]: this.state.open,
-          })}
-        >
-          <Toolbar disableGutters={!this.state.open}>
-            <IconButton
-              color="inherit"
-              aria-label="Open drawer"
-              onClick={this.handleDrawerOpen}
-              className={classNames(classes.menuButton, {
-                [classes.hide]: this.state.open,
-              })}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h5" color="inherit" noWrap>
-              {this.state.pageSelected}
-            </Typography>
-          </Toolbar>
-        </AppBar>
+        <CssBaseline /> 
+        {
+          this.state.dialog ? <FullScreenDialog /> : null
+        }
+            {/* AppBar */}
+          <AppBar
+            position="fixed"
+            className={classNames(classes.appBar, {
+              [classes.appBarShift]: this.state.open,
+            })}
+          >
+            <Toolbar disableGutters={!this.state.open}>
+              <IconButton
+                color="inherit"
+                aria-label="Open drawer"
+                onClick={this.handleDrawerOpen}
+                className={classNames(classes.menuButton, {
+                  [classes.hide]: this.state.open,
+                })}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography variant="h5" color="inherit" noWrap>
+                {this.state.pageSelected}
+              </Typography>
+            </Toolbar>
+          </AppBar>
 
-          {/* Drawer */}
-        <Drawer
-          open={this.state.open}
-          handleDrawerClose={this.handleDrawerClose}
-          handlePageSelector={this.handlePageSelector}
-          pages={this.state.pages}
-        />
+            {/* Drawer */}
+          <Drawer
+            open={this.state.open}
+            handleDrawerClose={this.handleDrawerClose}
+            handlePageSelector={this.handlePageSelector}
+            pages={this.state.pages}
+          />
 
-        {/* Main */}
-        <main className={classes.content}>
-          <div className={classes.toolbar} />
-          {
-            this.state.pageSelected === "About me" ? <AboutMe /> :
-            this.state.pageSelected === "Efren's works" ? <h1>Works</h1> :
-            this.state.pageSelected === "Contact to Efren Sanchez" ? <h1>Contact me</h1> :
-            this.state.pageSelected === "Efren's stack" ? <h1>Stack</h1> :
-            <h1>Page not found</h1>
-          }
-        </main>
+          {/* Main */}
+          <main className={classes.content}>
+            <div className={classes.toolbar} />
+            {
+              this.state.pageSelected === "About me" ? <AboutMe /> :
+              this.state.pageSelected === "Efren's works" ? <Works handlesourceCode={this.handlesourceCode}/> :
+              this.state.pageSelected === "Contact to Efren Sanchez" ? <ContactMe /> :
+              this.state.pageSelected === "Efren's stack" ? <Stack /> :
+              <h1>Page not found</h1>
+            }
+          </main>
+        
       </div>
     );
   }
