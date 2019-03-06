@@ -1,5 +1,6 @@
 //Dependencies
 import React from 'react';
+import PropTypes from 'prop-types';
 
 //Material
 import { withStyles } from '@material-ui/core/styles';
@@ -92,4 +93,9 @@ const Stack = (props) => {
   )
 }
 
-export default withStyles(styles)(Stack);
+Stack.propTypes = {
+  classes: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles, { withTheme: true })(Stack);

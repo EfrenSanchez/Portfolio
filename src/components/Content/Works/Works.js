@@ -54,7 +54,6 @@ const styles = theme => ({
     marginLeft: '10px'
   },
   iconButton: {
-    color: '#fff',
     marginRight: '20px'
   }
 });
@@ -77,9 +76,17 @@ function Works(props) {
                 subtitle: classes.subtitle
               }}
               actionIcon={
+                project.title === "Coding" 
+                ? 
+                <Tooltip title="Not available">
+                  <IconButton disable='true' className={classes.iconButton} > 
+                    <CodeIcon />
+                  </IconButton> 
+                </Tooltip>
+                : 
                 <Tooltip title="Source Code">
-                  <IconButton className={classes.iconButton} onClick={props.handlesourceCode.bind(this, project.id)}> 
-                    <CodeIcon  />
+                  <IconButton className={classes.iconButton} style={{color: '#fff'}} onClick={props.handleDialogOpen.bind(this, project.id)}>
+                    <CodeIcon />
                   </IconButton>
                 </Tooltip>
               }
@@ -93,6 +100,8 @@ function Works(props) {
 
 Works.propTypes = {
   classes: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired,
+  handleDialogOpen: PropTypes.func.isRequired
 };
 
-export default withStyles(styles)(Works);
+export default withStyles(styles, { withTheme: true })(Works);

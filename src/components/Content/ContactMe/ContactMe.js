@@ -1,15 +1,19 @@
 //Dependencies
 import React from 'react';
-
-//Components
-import { MediumIcon, GithubIcon, TwitterIcon, LinkedinIcon } from "../../SvgIcons/SvgIcons";
+import PropTypes from 'prop-types';
 
 //Data
 import { socialMedia } from "../../../data/data";
 
+//Components
+import ListItems from "../../List/ListItems";
+
 //Material
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
+
+//Icons
+import { MediumIcon, GithubIcon, TwitterIcon, LinkedinIcon } from "../../SvgIcons/SvgIcons";
 
 //Styles
 const styles = theme => ({
@@ -86,6 +90,7 @@ const styles = theme => ({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    color: '#fff'
   },
   mapResponsive: {
     overflow: 'hidden',
@@ -139,14 +144,8 @@ const ContactMe = (props) => {
             {
               socialMedia.map( link => {
                 return(
-                  <a key={link.id} target="_blank" href={link.src} className={classes.socialMediaLink}>
-                    {(
-                    link.id === "01" ? <GithubIcon style={{color: '#fff'}} /> : 
-                    link.id === "02" ? <TwitterIcon style={{color: '#fff'}} /> : 
-                    link.id === "03" ? <LinkedinIcon style={{color: '#fff'}} /> : 
-                    link.id === "04" ? <MediumIcon style={{color: '#fff'}} /> :
-                    null
-                  )}
+                  <a key={link.id} target="_blank" href={link.src} >
+                     <ListItems icon={link.icon} style={{color:'#fff'}}/>
                   </a>
                 )
               })
@@ -156,7 +155,7 @@ const ContactMe = (props) => {
       </div>
       <div className={classes.mapResponsive}>
         <iframe 
-          async
+          async={true}
           src="https://maps.google.com/maps?width=600&amp;height=450&amp;hl=en&amp;q=Palmones%2C%20Spain+(Palmones)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"
           className={classes.mapFrame}
           width="600"
@@ -168,8 +167,12 @@ const ContactMe = (props) => {
         </iframe>
       </div>
     </section>
-  )
+  );
 }
 
+ContactMe.propTypes = {
+  classes: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired
+};
 
-export default withStyles(styles)(ContactMe);
+export default withStyles(styles, { withTheme: true })(ContactMe);

@@ -1,5 +1,6 @@
 //Dependencies
 import React from 'react';
+import PropTypes from 'prop-types';
 
 //Data
 import { skills } from "../../../data/data";
@@ -77,7 +78,7 @@ const styles = theme => ({
 })
 
 const AboutMe = (props) => {
-  const { classes, theme } = props;
+  const { classes } = props;
   return (
     <section className={classes.section}>
       <div className={classes.aboutLeft}>
@@ -126,5 +127,9 @@ const AboutMe = (props) => {
   )
 }
 
+AboutMe.propTypes = {
+  classes: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired,
+};
 
-export default withStyles(styles)(AboutMe);
+export default withStyles(styles, { withTheme: true })(AboutMe);
