@@ -92,7 +92,7 @@ const Menu = (props) => {
         <List>
           {data.pages.map(page => {
             return(
-            <ListItem button key={page.id} onClick={props.handlePageSelector.bind(this, page.title)}> 
+            <ListItem button key={page.id} onClick={props.handlePageSelector.bind(this, page)}> 
               <ListItems icon={page.icon} color="action"/>
               <ListItemText primary={page.name} />
             </ListItem>)

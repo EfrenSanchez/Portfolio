@@ -92,24 +92,58 @@
         "github": "https://github.com/EfrenSanchez/Shopping-app", 
         "html": "EfrenSanchez/3de31f20f024f6780a571481bacb03c1",
         "styles": "EfrenSanchez/ead35101246b9d62ca8b0873a4294d99",
-        "js": "EfrenSanchez/c9c6b6065396797be56a95bc9a850052"
+        "js": "EfrenSanchez/c9c6b6065396797be56a95bc9a850052",
+        "web": "https://efrensanchez.github.io/Shopping-app/",
+        "freeCode": true
       }
     },
     {
       "id": "202",
-      "img": "https://source.unsplash.com/random",
-      "title": "Coding",
-      "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
-      "stack": "(Work in Progress)",
+      "img": "assets/todolist-app.png",
+      "title": "Todo List App",
+      "desc": "React JS and the fundamentals, React-router and Axios library to manage the querys at API",
+      "stack": "React | React-router | Axios",
       "src": {
-        "github": "", 
+        "github": "https://github.com/EfrenSanchez/react-todolist/tree/dev", 
         "html": "",
         "styles": "",
-        "js": ""
+        "js": "",
+        "web": "https://efrensanchez.github.io/react-todolist/",
+        "freeCode": false
       }
     },
     {
       "id": "203",
+      "img": "assets/weather-app.png",
+      "title": "Weather App",
+      "desc": "Static weather website. API from openweathermap used",
+      "stack": "HTML | CSS | JS | WEBPACK",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/Weather-app", 
+        "html": "EfrenSanchez/1e3f37887ada5257a25413a97391c04f",
+        "styles": "EfrenSanchez/2c0213ed2551fc30ad493f00efed0285",
+        "js": "EfrenSanchez/b3403a1bfd63b48daad03bc3440606fc",
+        "web": "http://niceweather.surge.sh/",
+        "freeCode": true
+      }
+    },
+    {
+      "id": "204",
+      "img": "assets/disc-display.png",
+      "title": "Disc display",
+      "desc": " a disc display that shows the percentage",
+      "stack": "HTML | CSS | JS",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/disc-display", 
+        "html": "EfrenSanchez/eb41bf1aed6c525c9cd138666ef33d40",
+        "styles": "EfrenSanchez/bf3428fe80d564b99592153d6de5cb65",
+        "js": "EfrenSanchez/92f1015b6167a8f65e6594bc5b6dd6b8",
+        "web": "https://efrensanchez.github.io/disc-display/",
+        "freeCode": true
+      }
+    },
+    {
+      "id": "205",
       "img": "https://source.unsplash.com/random",
       "title": "Coding",
       "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
@@ -118,20 +152,9 @@
         "github": "", 
         "html": "",
         "styles": "",
-        "js": ""
-      }
-    },
-    {
-      "id": "204",
-      "img": "https://source.unsplash.com/random",
-      "title": "Coding",
-      "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
-      "stack": "(Work in Progress)",
-      "src": {
-        "github": "https://github.com/EfrenSanchez/Shopping-app", 
-        "html": "https://gist.github.com/EfrenSanchez/3de31f20f024f6780a571481bacb03c1.js",
-        "styles": "",
-        "js": ""
+        "js": "",
+        "web": "",
+        "freeCode": false
       }
     }
   ]

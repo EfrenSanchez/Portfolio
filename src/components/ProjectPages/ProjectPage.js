@@ -28,7 +28,6 @@ const styles = theme => ({
 
 class ProjectPage extends React.Component {
   render() {
-    let githubUrl = this.props.projectSelected.src.github;
     let htmlUrl = this.props.projectSelected.src.html;
     let jsUrl = this.props.projectSelected.src.js;
     let styleslUrl = this.props.projectSelected.src.styles;

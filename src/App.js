@@ -54,7 +54,7 @@ class App extends React.Component {
   state = {
     open: false,
     openDialog: false,
-    pageSelected: "About me",
+    pageSelected: {"id":"01"},
     projectSelected: {},
   };
 
@@ -100,7 +100,7 @@ class App extends React.Component {
           {/* Header */}
           <Header 
             handleMenuOpen={this.handleMenuOpen}
-            pageSelected={this.state.pageSelected}
+            pageSelected={this.state.pageSelected.title}
             open={this.state.open}
             />
 
@@ -115,10 +115,10 @@ class App extends React.Component {
           <main className={classes.content}>
             <div className={classes.toolbar} />
             {
-              this.state.pageSelected === "About me" ? <AboutMe /> :
-              this.state.pageSelected === "Efren's works" ? <Works handleDialogOpen={this.handlesourceCode}/> :
-              this.state.pageSelected === "Contact to Efren Sanchez" ? <ContactMe /> :
-              this.state.pageSelected === "Efren's stack" ? <Stack /> :
+              this.state.pageSelected.id === "01" ? <AboutMe /> :
+              this.state.pageSelected.id === "02" ? <Works handleDialogOpen={this.handlesourceCode}/> :
+              this.state.pageSelected.id === "03" ? <ContactMe /> :
+              this.state.pageSelected.id === "04" ? <Stack /> :
               <h1>Page not found</h1>
             }
           </main>
