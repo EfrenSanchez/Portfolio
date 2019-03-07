@@ -1,0 +1,161 @@
+{
+  "pages": [
+    {
+      "id": "01",
+      "name": "About Me",
+      "title": "About me",
+      "icon": "PersonIcon"
+    },
+    {
+      "id": "02",
+      "name": "Work",
+      "title": "Efren's works",
+      "icon": "WorkIcon"
+    },
+    {
+      "id": "03",
+      "name": "Contact Me",
+      "title": "Contact me",
+      "icon": "MailIcon"
+    },
+    {
+      "id": "04",
+      "name": "Stack",
+      "title": "Efren's stack",
+      "icon": "CodeIcon"
+    }
+  ],
+  "socialMedia": [
+    {
+      "id": "101",
+      "name": "Github",
+      "src": "https://github.com/EfrenSanchez",
+      "icon": "GithubIcon"
+    },
+    {
+      "id": "102",
+      "name": "Twitter",
+      "src": "https://twitter.com/EfrenSango",
+      "icon": "TwitterIcon"
+    },
+    {
+      "id": "103",
+      "name": "Linkedin",
+      "src": "https://www.linkedin.com/in/EfrenSango",
+      "icon": "LinkedinIcon"
+    },
+    {
+      "id": "104",
+      "name": "Medium",
+      "src": "https://medium.com/@efrnsnchez",
+      "icon": "MediumIcon"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "progress": "80%"
+    },
+    {
+      "name": "CSS",
+      "progress": "85%"
+    },
+    {
+      "name": "JAVASCRIPT",
+      "progress": "74%"
+    },
+    {
+      "name": "REACT",
+      "progress": "62%"
+    },
+    {
+      "name": "NodeJS",
+      "progress": "60%"
+    },
+    {
+      "name": "GRAPHQL",
+      "progress": "36%"
+    },
+    {
+      "name": "MONGODB",
+      "progress": "50%"
+    }
+  ],
+  "works": [
+    {
+      "id": "201",
+      "img": "assets/shopping-app.png",
+      "title": "Shopping App",
+      "desc": "Dynamic web. HTML injecting into the DOM and the logic app just with vanilla JS, no frameworks",
+      "stack": "HTML | CSS | JS",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/Shopping-app", 
+        "html": "EfrenSanchez/3de31f20f024f6780a571481bacb03c1",
+        "styles": "EfrenSanchez/ead35101246b9d62ca8b0873a4294d99",
+        "js": "EfrenSanchez/c9c6b6065396797be56a95bc9a850052",
+        "web": "https://efrensanchez.github.io/Shopping-app/",
+        "freeCode": true
+      }
+    },
+    {
+      "id": "202",
+      "img": "assets/todolist-app.png",
+      "title": "Todo List App",
+      "desc": "React JS and the fundamentals, React-router and Axios library to manage the querys at API",
+      "stack": "React | React-router | Axios",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/react-todolist/tree/dev", 
+        "html": "",
+        "styles": "",
+        "js": "",
+        "web": "https://efrensanchez.github.io/react-todolist/",
+        "freeCode": false
+      }
+    },
+    {
+      "id": "203",
+      "img": "assets/weather-app.png",
+      "title": "Weather App",
+      "desc": "Static weather website. API from openweathermap used",
+      "stack": "HTML | CSS | JS | WEBPACK",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/Weather-app", 
+        "html": "EfrenSanchez/1e3f37887ada5257a25413a97391c04f",
+        "styles": "EfrenSanchez/2c0213ed2551fc30ad493f00efed0285",
+        "js": "EfrenSanchez/b3403a1bfd63b48daad03bc3440606fc",
+        "web": "http://niceweather.surge.sh/",
+        "freeCode": true
+      }
+    },
+    {
+      "id": "204",
+      "img": "assets/disc-display.png",
+      "title": "Disc display",
+      "desc": " a disc display that shows the percentage",
+      "stack": "HTML | CSS | JS",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/disc-display", 
+        "html": "EfrenSanchez/eb41bf1aed6c525c9cd138666ef33d40",
+        "styles": "EfrenSanchez/bf3428fe80d564b99592153d6de5cb65",
+        "js": "EfrenSanchez/92f1015b6167a8f65e6594bc5b6dd6b8",
+        "web": "https://efrensanchez.github.io/disc-display/",
+        "freeCode": true
+      }
+    },
+    {
+      "id": "205",
+      "img": "https://source.unsplash.com/random",
+      "title": "Coding",
+      "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
+      "stack": "(Work in Progress)",
+      "src": {
+        "github": "", 
+        "html": "",
+        "styles": "",
+        "js": "",
+        "web": "",
+        "freeCode": false
+      }
+    }
+  ]
+}

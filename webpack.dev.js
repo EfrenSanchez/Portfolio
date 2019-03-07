@@ -12,14 +12,16 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'shop-app.html',
-      template: './src/shop-app.html'
     })
   ],
   module: {
     rules: [
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader'
+        ]
+      },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [

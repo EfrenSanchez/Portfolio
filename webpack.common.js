@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const DIST = path.resolve(__dirname, 'docs');
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: './src/index.js',
   plugins: [
     new CleanWebpackPlugin(['docs/*']),
     new CopyPlugin([ 
@@ -23,18 +23,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader'
-          }
-        ]
-      },
-      {
         test: /\.(html)$/,
         use: {
           loader: 'html-loader'
         }
+      },
+      {
+        use:'babel-loader',
+        test:/\.js$/,
+        exclude:/node_modules/
       }
     ]
   }
