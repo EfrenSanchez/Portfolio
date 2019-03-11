@@ -20,13 +20,14 @@ const styles = theme => ({
     flexWrap: 'wrap',
     overflow: 'hidden',
     alignItems: 'center',
-    [theme.breakpoints.down('sm')]: {flexDirection: 'column'}
+    [theme.breakpoints.down('sm')]: {flexDirection: 'column', flexWrap: 'nowrap', height: 'auto'}
   },
   service: {
     width: '25%',
     textAlign: 'center',
     padding: '0 40px',
-    borderRadius: '4px'
+    borderRadius: '4px',
+    [theme.breakpoints.down('sm')]: {width: '100%' }
   },
   serviceSvg: {
     fill: primary,
