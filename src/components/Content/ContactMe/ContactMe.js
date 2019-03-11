@@ -63,7 +63,7 @@ const styles = theme => ({
     marginBottom: '10px'
   },
   bioSubtitle: {
-    margin: '0 0 15px 0',
+    margin: '5px 0 15px 0',
   },
   contactFooter: {
     backgroundColor: '#757f83',
@@ -90,6 +90,7 @@ const styles = theme => ({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    padding: '10px',
     color: '#fff'
   },
   mapResponsive: {
