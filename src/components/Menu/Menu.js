@@ -32,6 +32,7 @@ const styles = theme => ({
     width: drawerWidth,
     flexShrink: 0,
     whiteSpace: 'nowrap',
+    [theme.breakpoints.down('sm')]: {display: 'none'}
   },
   drawerOpen: {
     width: drawerWidth,
@@ -39,6 +40,7 @@ const styles = theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    [theme.breakpoints.down('sm')]: {display: 'block'}
   },
   drawerClose: {
     transition: theme.transitions.create('width', {

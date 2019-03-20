@@ -83,6 +83,21 @@
   ],
   "works": [
     {
+      "id": "200",
+      "img": "assets/space-x.png",
+      "title": "SpaceX",
+      "desc": "App made with React and GraphQL to fetch data from Open Source REST API.",
+      "stack": "React | GraphQL | Express",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/SpaceX", 
+        "html": "",
+        "styles": "",
+        "js": "",
+        "web": "https://quiet-tundra-79147.herokuapp.com/",
+        "freeCode": false
+      }
+    },
+    {
       "id": "201",
       "img": "assets/shopping-app.png",
       "title": "Shopping App",
@@ -144,6 +159,21 @@
     },
     {
       "id": "205",
+      "img": "assets/hacker-news.png",
+      "title": "Hackernews Client",
+      "desc": " React JS and the fundamentals such as HOCs, state, HOFs, events, etc. ",
+      "stack": "React | API | axios",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/hackernews-client", 
+        "html": "",
+        "styles": "",
+        "js": "",
+        "web": "https://efrensanchez.github.io/hackernews-client/",
+        "freeCode": false
+      }
+    },
+    {
+      "id": "206",
       "img": "https://source.unsplash.com/random",
       "title": "Coding",
       "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
