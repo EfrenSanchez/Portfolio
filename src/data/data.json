@@ -174,6 +174,36 @@
     },
     {
       "id": "206",
+      "img": "assets/city.png",
+      "title": "Three-city",
+      "desc": "3D city made with the library Three.js",
+      "stack": "JS | Three.js",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/three-city", 
+        "html": "",
+        "styles": "",
+        "js": "",
+        "web": "https://efrensanchez.github.io/three-city/",
+        "freeCode": false
+      }
+    },
+    {
+      "id": "207",
+      "img": "assets/recetas.png",
+      "title": "Recetas",
+      "desc": "PWA using MealDB's API to display recipes with their instructions.",
+      "stack": "React | PWA ",
+      "src": {
+        "github": "https://github.com/EfrenSanchez/recetas", 
+        "html": "",
+        "styles": "",
+        "js": "",
+        "web": " https://efrensanchez.github.io/recetas/",
+        "freeCode": false
+      }
+    },
+    {
+      "id": "208",
       "img": "https://source.unsplash.com/random",
       "title": "Coding",
       "desc": "I am currently working on some Projects I will upload onto my Portfolio very soon",
